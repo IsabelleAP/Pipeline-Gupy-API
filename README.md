@@ -1,38 +1,51 @@
 # Desafios-Junior-Pleno
 
 ## Desafio - Consumo da API da Gupy 
-Este script consome a API pública da Gupy para coletar vagas de emprego com base em palavras-chave e salva os resultados em arquivos JSON.
+Este projeto implementa um pipeline de coleta e análise de vagas de emprego utilizando a API pública da Gupy. Ele integra Python, manipulação de dados, integração com APIs, análise exploratória e visualização em Power BI.
 
-Os dados estão armazenados na pasta `dados/vagas`.
+### Objetivo
+Construir um fluxo automatizado que:
+* Consome a API Gupy para buscar vagas com base em palavras-chave.
+* Armazena os resultados em arquivos JSON organizados.
+* Análise exploratória em Python
+* Dashboard simples no Power BI
+
+### Tecnologias Utilizadas
+* Python (requests, pandas, json)
+* API REST da Gupy
+* Power BI (dashboard único para visualização)
+* Jupyter Notebook para exploração de dados
 
 ### Estrutura do projeto
 ```
-desafios-junior-pleno
-│
-├─ src/
-│  ├─ api.py        # funções responsáveis por consumir a API
-│  ├─ storage.py    # funções responsáveis por salvar arquivos
-│  └─ main.py       # fluxo principal do programa
-│
-└─ dados/
-   └─ vagas/        # arquivos JSON gerados pelo script
+Pipeline-Gupy-API
+│── src/
+│   ├── api.py        # Funções para consumir a API
+│   ├── storage.py    # Funções para salvar arquivos
+│   └── main.py       # Fluxo principal do pipeline
+│── dados/
+│   └── vagas/        # Arquivos JSON gerados
+│── notebook/         # Notebooks exploratórios
+│── powerbi/          # Dashboard simples em Power BI
+│── requeriments.txt  # Dependências do projeto
+│── README.md         # Documentação
+
 ```
 
 ### Como executar
 1. Clone o repositório 
-`git clone <repo>`
-2. Entre na pasta do projeto
-3. Instale as dependências 
-`pip install requests`
-4. Execute o script 
-`python3 src/main.py`
-
-Após a execução, os arquivos JSON com as vagas coletadas serão gerados na pasta `dados/vagas`.
+```bash
+git clone https://github.com/IsabelleAP/Pipeline-Gupy-API.git
+```
+2. Instale as dependências:
+```bash
+pip install -r requeriments.txt
+```
+3. Execute o pipeline:
+```bash
+python3 src/main.py
+```
+Os arquivos JSON serão gerados em `dados/vagas`.
 
 ### API utilizada
-Endpoint: https://portal.api.gupy.io/api/job
-
-Parâmetros utilizados:
-- name: palavra-chave para busca de vagas
-- offset: posição inicial da paginação
-- limit: quantidade de resultados retornados
+https://portal.api.gupy.io/api/job
