@@ -1,20 +1,19 @@
-# Desafios-Junior-Pleno
+# ANÁLISE DE DADOS - VAGAS DE DADOS NA GUPY
 
-## Desafio - Consumo da API da Gupy 
-Este projeto implementa um pipeline de coleta e análise de vagas de emprego utilizando a API pública da Gupy. Ele integra Python, manipulação de dados, integração com APIs, análise exploratória e visualização em Power BI.
+## 📌 Pipeline Gupy API
+Este projeto implementa um pipeline de coleta e análise de vagas de emprego utilizando a API pública da Gupy. Ele integra Python, manipulação de dados, integração com API, análise exploratória e visualização em Power BI.
 
-### Objetivo
-Construir um fluxo automatizado que:
-* Consome a API Gupy para buscar vagas com base em palavras-chave.
-* Armazena os resultados em arquivos JSON organizados.
+### Objetivos
+* Consumir a API Gupy para buscar vagas com base em palavras-chave.
+* Aermazenar os resultados em arquivos JSON organizados.
 * Análise exploratória em Python
-* Dashboard simples no Power BI
+* Dashboard no Power BI
 
 ### Tecnologias Utilizadas
-* Python (requests, pandas, json)
+* Python (requests, pandas, json) - comunicação com a API da Gupy e manipulação e análise de dados
 * API REST da Gupy
-* Power BI (dashboard único para visualização)
-* Jupyter Notebook para exploração de dados
+* Power BI
+* Jupyter Notebook
 
 ### Estrutura do projeto
 ```
